@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+  <script>
+    //Attempting to access an element before it is fully loaded can lead to errors.
+    document.getElementById("myDiv").innerHTML = "This should not cause an error";
+  </script>
+</body>
+</html>
